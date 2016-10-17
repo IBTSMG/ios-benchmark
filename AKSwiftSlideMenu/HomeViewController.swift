@@ -31,7 +31,7 @@ class HomeViewController: BaseViewController {
         }
     
         let alert = UIAlertController(title: "HoşGeldin", message: fullname, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
