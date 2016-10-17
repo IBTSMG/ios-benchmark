@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  AKSwiftSlideMenu
+//  iosBenchmark
 //
-//  Created by Ashish on 21/09/15.
-//  Copyright (c) 2015 Kode. All rights reserved.
+//  Created by SMG on 17/10/2016.
+//  Copyright © 2016 Kode. All rights reserved.
 //
 
 import UIKit
