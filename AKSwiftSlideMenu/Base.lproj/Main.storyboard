@@ -13,10 +13,38 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="s4l-E0-pla">
+                                <frame key="frameInset" minX="16" minY="86" height="30" maxX="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Name" label="Name"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="LB4-oV-joJ">
+                                <frame key="frameInset" minX="16" minY="133" height="30" maxX="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Surname" label="Surname"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YZb-mI-hIh">
+                                <frame key="frameInset" minY="184" width="12.81%" height="30" maxX="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showName:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZUl-Ws-GeH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="a1u-Ki-tSz"/>
                     <connections>
+                        <outlet property="name" destination="s4l-E0-pla" id="77A-vd-ftJ"/>
+                        <outlet property="surname" destination="LB4-oV-joJ" id="VmY-rZ-j6X"/>
                         <segue destination="khG-SL-0rk" kind="push" identifier="pushToPlay" id="WvG-AQ-ekI"/>
                         <segue destination="SPK-3t-84j" kind="push" id="JgD-1d-5de"/>
                         <segue destination="QTZ-YM-Lho" kind="push" id="5Lo-4i-xMj"/>
@@ -28,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="340"/>
+            <point key="canvasLocation" x="693.5" y="339.5"/>
         </scene>
         <!--List-->
         <scene sceneID="JKX-36-sLL">
