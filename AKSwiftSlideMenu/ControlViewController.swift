@@ -1,8 +1,8 @@
 //
-//  PlayVC.swift
-//  AKSwiftSlideMenu
+//  ControlsViewController.swift
+//  iosBenchmark
 //
-//  Created by MAC-186 on 4/8/16.
+//  Created by SMG on 17/10/2016.
 //  Copyright © 2016 Kode. All rights reserved.
 //
 
