@@ -15,7 +15,19 @@ class PopupViewController: BaseViewController {
         addSlideMenuButton()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func showAlert(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func showConfirm(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func showActionSheet(_ sender: UIButton) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

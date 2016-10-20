@@ -173,13 +173,44 @@
                     <view key="view" contentMode="scaleToFill" id="XEN-GQ-Ror">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Imaj Listesi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uFA-Ra-4M3">
+                                <frame key="frameInset" minX="137" minY="85" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" id="aEp-Fl-Ce2">
+                                <frame key="frameInset" minX="16" minY="114" maxX="16" maxY="20"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Monkey" id="4hp-OP-A5W">
+                                        <rect key="frame" x="21" y="8" width="300" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tabbed" id="q90-lB-7Td">
+                                        <rect key="frame" x="21" y="181" width="300" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WaterFront" id="0Bu-Be-3pw">
+                                        <rect key="frame" x="21" y="348" width="300" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Monkey" id="ofX-Lj-NHp">
+                                        <rect key="frame" x="21" y="518" width="300" height="149"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Scroll" id="8dH-Gd-LFP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2z-Ka-u2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702" y="2575"/>
+            <point key="canvasLocation" x="701.5" y="2574.5"/>
         </scene>
         <!--Popup-->
         <scene sceneID="HPC-3N-maP">
@@ -188,13 +219,39 @@
                     <view key="view" contentMode="scaleToFill" id="sQy-GM-kbT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mcf-y0-BV6">
+                                <frame key="frameInset" minX="142" minY="97" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Alert"/>
+                                <connections>
+                                    <action selector="showAlert:" destination="67D-fj-tpW" eventType="touchUpInside" id="sfO-lu-nru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M3y-vL-gKW">
+                                <frame key="frameInset" minX="134" minY="137" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Confirm"/>
+                                <connections>
+                                    <action selector="showConfirm:" destination="67D-fj-tpW" eventType="touchUpInside" id="p1J-UC-78r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Ip-W4-Niq">
+                                <frame key="frameInset" minX="113" minY="177" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show ActionSheet"/>
+                                <connections>
+                                    <action selector="showActionSheet:" destination="67D-fj-tpW" eventType="touchUpInside" id="iFU-2a-eLd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Popup" id="NzU-TP-iXB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46t-BO-hhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="2578"/>
+            <point key="canvasLocation" x="1121.5" y="2577.5"/>
         </scene>
         <!--Image-->
         <scene sceneID="r69-BQ-Vkz">
@@ -203,13 +260,33 @@
                     <view key="view" contentMode="scaleToFill" id="08R-xt-qCV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Gtp-TA-QEq">
+                                <frame key="frameInset" minX="16" minY="88" height="30" maxX="16"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="imageChanged:" destination="0tv-Nf-loa" eventType="editingDidBegin" id="Kyb-Ch-6gw"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="2ja-l8-cyt">
+                                <frame key="frameInset" minX="38" minY="141" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Image" id="p2b-Mu-htS"/>
+                    <connections>
+                        <outlet property="imgSelected" destination="2ja-l8-cyt" id="kjc-tM-ch0"/>
+                        <outlet property="txtImage" destination="Gtp-TA-QEq" id="MKN-xi-sNK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leh-JI-pSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="1843"/>
+            <point key="canvasLocation" x="1123.5" y="1842.5"/>
         </scene>
         <!--Carousel-->
         <scene sceneID="IPQ-EY-HwI">
@@ -374,7 +451,7 @@
                                         <rect key="frame" x="0.0" y="22" width="316" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kmA-Ah-Pww" id="PkJ-pF-O9W">
-                                            <frame key="frameInset" width="316" height="53.5"/>
+                                            <frame key="frameInset" width="316" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qcm-8o-Buf">
@@ -409,6 +486,11 @@
             <point key="canvasLocation" x="-337" y="340"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Monkey" width="191" height="202"/>
+        <image name="Tabbed" width="300" height="307"/>
+        <image name="WaterFront" width="300" height="300"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
