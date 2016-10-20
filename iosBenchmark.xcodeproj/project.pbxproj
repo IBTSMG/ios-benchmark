@@ -13,12 +13,14 @@
 		753A55CD1BB073E900254F27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753A55CB1BB073E900254F27 /* LaunchScreen.xib */; };
 		753A55E31BB0753B00254F27 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A55E21BB0753B00254F27 /* MenuViewController.swift */; };
 		753A55E51BB0755100254F27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A55E41BB0755100254F27 /* BaseViewController.swift */; };
+		8B28CCB71DB896D800F1F085 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28CCB61DB896D800F1F085 /* MyCustomCell.swift */; };
 		8B37C9391DB4BE9100367E27 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C9381DB4BE9100367E27 /* ListViewController.swift */; };
 		8B37C93B1DB4C49A00367E27 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C93A1DB4C49A00367E27 /* CarouselViewController.swift */; };
 		8B37C93D1DB4C59200367E27 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C93C1DB4C59200367E27 /* TabViewController.swift */; };
 		8B37C93F1DB4C5F200367E27 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C93E1DB4C5F200367E27 /* ImageViewController.swift */; };
 		8B37C9411DB4C64E00367E27 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C9401DB4C64E00367E27 /* ScrollViewController.swift */; };
 		8B37C9431DB4C65C00367E27 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37C9421DB4C65C00367E27 /* PopupViewController.swift */; };
+		8BCAEE6A1DB7A848005B7FC7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAEE691DB7A848005B7FC7 /* Order.swift */; };
 		C6EEF9F61CB7E2AD00A3DC6D /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F51CB7E2AD00A3DC6D /* ControlViewController.swift */; };
 		C6EEF9F81CB7E4E000A3DC6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEF9F71CB7E4E000A3DC6D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,12 +34,14 @@
 		753A55CC1BB073E900254F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		753A55E21BB0753B00254F27 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		753A55E41BB0755100254F27 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8B28CCB61DB896D800F1F085 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		8B37C9381DB4BE9100367E27 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8B37C93A1DB4C49A00367E27 /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		8B37C93C1DB4C59200367E27 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		8B37C93E1DB4C5F200367E27 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		8B37C9401DB4C64E00367E27 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		8B37C9421DB4C65C00367E27 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		8BCAEE691DB7A848005B7FC7 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C6EEF9F51CB7E2AD00A3DC6D /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		C6EEF9F71CB7E4E000A3DC6D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +60,7 @@
 		753A55B41BB073E900254F27 = {
 			isa = PBXGroup;
 			children = (
+				8BCAEE681DB7A827005B7FC7 /* Entities */,
 				753A55BF1BB073E900254F27 /* ViewControllers */,
 				8B37C9361DB4B83B00367E27 /* Views */,
 				8B37C9371DB4B84B00367E27 /* Resources */,
@@ -86,6 +91,7 @@
 				8B37C93E1DB4C5F200367E27 /* ImageViewController.swift */,
 				8B37C9401DB4C64E00367E27 /* ScrollViewController.swift */,
 				8B37C9421DB4C65C00367E27 /* PopupViewController.swift */,
+				8B28CCB61DB896D800F1F085 /* MyCustomCell.swift */,
 			);
 			name = ViewControllers;
 			path = AKSwiftSlideMenu;
@@ -106,6 +112,14 @@
 				753A55C91BB073E900254F27 /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8BCAEE681DB7A827005B7FC7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8BCAEE691DB7A848005B7FC7 /* Order.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +202,13 @@
 				753A55E51BB0755100254F27 /* BaseViewController.swift in Sources */,
 				8B37C93B1DB4C49A00367E27 /* CarouselViewController.swift in Sources */,
 				C6EEF9F61CB7E2AD00A3DC6D /* ControlViewController.swift in Sources */,
+				8BCAEE6A1DB7A848005B7FC7 /* Order.swift in Sources */,
 				8B37C9391DB4BE9100367E27 /* ListViewController.swift in Sources */,
 				C6EEF9F81CB7E4E000A3DC6D /* HomeViewController.swift in Sources */,
 				8B37C9411DB4C64E00367E27 /* ScrollViewController.swift in Sources */,
 				753A55E31BB0753B00254F27 /* MenuViewController.swift in Sources */,
 				753A55C31BB073E900254F27 /* AppDelegate.swift in Sources */,
+				8B28CCB71DB896D800F1F085 /* MyCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JYG28436PQ;
 				INFOPLIST_FILE = AKSwiftSlideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtech.iosbenchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JYG28436PQ;
 				INFOPLIST_FILE = AKSwiftSlideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtech.iosbenchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
