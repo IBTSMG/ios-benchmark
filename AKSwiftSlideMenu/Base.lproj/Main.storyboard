@@ -158,9 +158,38 @@
                     <view key="view" contentMode="scaleToFill" id="1nE-Y1-oNf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" misplaced="YES" id="7Gg-aK-cRI">
+                                <frame key="frameInset" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem badgeValue="Red" systemItem="favorites" id="ZFI-mi-5VJ"/>
+                                    <tabBarItem tag="1" badgeValue="Blue" systemItem="recents" id="FHf-7b-egq"/>
+                                    <tabBarItem tag="2" badgeValue="Black" systemItem="bookmarks" id="OHW-id-BvD"/>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" misplaced="YES" id="TAe-2e-uOM">
+                                <frame key="frameInset" minX="17" minY="200" width="340" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h4Q-Gg-wD3">
+                                <frame key="frameInset" minX="166" minY="100" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tab" id="Ij2-pf-Bd8"/>
+                    <connections>
+                        <outlet property="lblTitle" destination="h4Q-Gg-wD3" id="c1h-zg-EBo"/>
+                        <outlet property="tabControl" destination="7Gg-aK-cRI" id="3Hh-eK-uzZ"/>
+                        <outlet property="vwRect" destination="TAe-2e-uOM" id="rGG-ta-l8L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rc9-4O-HSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
