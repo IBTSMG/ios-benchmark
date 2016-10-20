@@ -41,6 +41,7 @@ class ListViewController: BaseViewController, UITableViewDataSource , UITableVie
         }
         
         self.tblList.reloadData()
+        txtCount.resignFirstResponder()
     }
     
     private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
