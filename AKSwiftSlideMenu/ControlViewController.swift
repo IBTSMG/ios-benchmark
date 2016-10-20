@@ -150,7 +150,7 @@ class ControlViewController: BaseViewController, UIPickerViewDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if(pickerView == self.jobPicker) {
+        if(self.jobPicker != nil && pickerView == self.jobPicker) {
             return jobs.count
         }
         else {
@@ -159,7 +159,7 @@ class ControlViewController: BaseViewController, UIPickerViewDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if(pickerView == self.jobPicker) {
+        if(self.jobPicker != nil && pickerView == self.jobPicker) {
             return jobs[row]
         }
         else {
@@ -168,7 +168,7 @@ class ControlViewController: BaseViewController, UIPickerViewDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if(pickerView == self.jobPicker){
+        if(self.jobPicker != nil && pickerView == self.jobPicker){
             txtJob.text = jobs[row]
             txtJob.resignFirstResponder()
         }
