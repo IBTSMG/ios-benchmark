@@ -17,15 +17,25 @@ class PopupViewController: BaseViewController {
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
-        
+        let alert = UIAlertController(title: "Alert", message: "You have been alerted", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func showConfirm(_ sender: UIButton) {
-        
+        let alert = UIAlertController(title: "Question?", message: "Would you like to play a game", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func showActionSheet(_ sender: UIButton) {
-        
+        let alert = UIAlertController(title: nil, message: "Choose Option", preferredStyle: UIAlertControllerStyle.actionSheet)
+        alert.addAction(UIAlertAction(title: "Twitter", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Facebook", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Email", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
